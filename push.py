@@ -14,7 +14,16 @@ os.chdir(GIT_REPO_PATH)
 
 # 3. Git 명령어 실행 함수
 def run_git_command(command):
-    result = subprocess.run(command, capture_output=True, text=True, shell=True)
+    # result = subprocess.run(command, capture_output=True, text=True, shell=True)
+    result = subprocess.run(
+        command, 
+        capture_output=True, 
+        text=True, 
+        shell=True, 
+        env=env, 
+        encoding="utf-8",
+        # errors="ignore" # 혹시 모를 디코딩 에러 무시
+    )
     if result.returncode == 0:
         print(result.stdout)
     else:
@@ -22,5 +31,6 @@ def run_git_command(command):
 
 # 4. push 수행 
 run_git_command(f"git add -A")
-run_git_command('git commit -m "auto update"')
+# run_git_command('git commit -m "auto update"')
+run_git_command('git commit -m "chore: auto update"')
 run_git_command("git push")
