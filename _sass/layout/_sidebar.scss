@@ -10,13 +10,25 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
 #sidebar {
   @include mx.pl-pr(0);
 
+  --site-title-color: rgb(255 255 255 / 96%);
+  --site-subtitle-color: rgb(241 245 249 / 82%);
+  --sidebar-muted-color: rgb(226 232 240 / 78%);
+  --sidebar-active-color: rgb(255 255 255 / 98%);
+  --sidebar-hover-bg: rgb(255 255 255 / 12%);
+  --sidebar-btn-bg: rgb(15 23 42 / 34%);
+  --sidebar-btn-color: rgb(255 255 255 / 78%);
+  --avatar-border-color: rgb(255 255 255 / 92%);
+
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   overflow-y: auto;
   width: v.$sidebar-width;
-  background: var(--sidebar-bg);
+  background:
+    linear-gradient(rgb(8 15 28 / 58%), rgb(8 15 28 / 78%)),
+    url('/assets/img/site/background.jpg') center / cover no-repeat,
+    var(--sidebar-bg);
   border-right: 1px solid var(--sidebar-border-color);
 
   /* Hide scrollbar for IE, Edge and Firefox */
