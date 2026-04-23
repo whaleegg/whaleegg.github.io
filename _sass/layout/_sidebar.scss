@@ -27,7 +27,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   width: v.$sidebar-width;
   background:
     linear-gradient(rgb(8 15 28 / 58%), rgb(8 15 28 / 78%)),
-    url('/assets/img/site/background.jpg') center / cover no-repeat,
+    url('/assets/img/site/background-optimized.jpg') center / cover no-repeat,
     var(--sidebar-bg);
   border-right: 1px solid var(--sidebar-border-color);
 
