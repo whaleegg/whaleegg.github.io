@@ -4,6 +4,7 @@ date: 2026-05-03 10:30:00 +0900
 categories: [Career, Blog]
 tags: [self-intro, portfolio, embedded, robotics, autonomous, ai, sim-to-real]
 description: 임베디드와 자율주행, 로보틱스의 연결점을 찾기 위해 어떤 공부를 해왔고 앞으로 어떤 방향으로 나아가고 싶은지 정리합니다.
+pin: true
 ---
 
 ## 블로그를 시작하며
